@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "e8b24fb0-a307-4c83-af1f-588fc81915cc",
+		"name": "web-crawler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9850732"
+	},
+	"item": [
+		{
+			"name": "Crawl",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": [\n        \"http://wcsonline.netlify.app\",\n        \"https://sequence.day\",\n        \"https://cmlabs.co\"\n        ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:30001/api/crawl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "30001",
+					"path": [
+						"api",
+						"crawl"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
